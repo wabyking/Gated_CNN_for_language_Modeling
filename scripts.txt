@@ -1,0 +1,10 @@
+
+  CUDA_VISIBLE_DEVICES='' python work.py --ps_hosts=10.141.160.46:24222 --worker_hosts="10.141.160.46:24223,10.141.160.46:24224,10.141.160.46:24225,10.141.160.46:24226" --job_name=ps  --task_index=0
+
+  CUDA_VISIBLE_DEVICES='0' python work.py --ps_hosts=10.141.160.46:24222 --worker_hosts="10.141.160.46:24223,10.141.160.46:24224,10.141.160.46:24225,10.141.160.46:24226" --job_name=worker  --task_index=0
+
+ CUDA_VISIBLE_DEVICES='1' python work.py --ps_hosts=10.141.160.46:24222 --worker_hosts="10.141.160.46:24223,10.141.160.46:24224,10.141.160.46:24225,10.141.160.46:24226" --job_name=worker  --task_index=1
+
+ CUDA_VISIBLE_DEVICES='2' python work.py --ps_hosts=10.141.160.46:24222 --worker_hosts="10.141.160.46:24223,10.141.160.46:24224,10.141.160.46:24225,10.141.160.46:24226" --job_name=worker  --task_index=2
+
+ CUDA_VISIBLE_DEVICES='3' python work.py --ps_hosts=10.141.160.46:24222 --worker_hosts="10.141.160.46:24223,10.141.160.46:24224,10.141.160.46:24225,10.141.160.46:24226" --job_name=worker  --task_index=3
